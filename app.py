@@ -300,6 +300,13 @@ def process_video():
    
     output_file = get_next_results_filename(RESULTS_FOLDER)
     save_to_json(results, behavior_durations, behavior_timestamps, consistent_egg_count, hatchling_max, total_duration, percentages, output_file)
+
+    # Clear LABELS_FOLDER and FRAMES_FOLDER
+    for folder in [LABELS_FOLDER, FRAMES_FOLDER]:
+        for file_name in os.listdir(folder):
+            file_path = os.path.join(folder, file_name)
+            if os.path.isfile(file_path):
+                os.remove(file_path)
    
     return jsonify({
         "message": "Video processed successfully",
