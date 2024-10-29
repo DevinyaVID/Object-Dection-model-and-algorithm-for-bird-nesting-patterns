@@ -1,0 +1,29 @@
+{
+    "results": {
+        "frame_0000.txt": "Absent"
+    },
+    "behavior_durations": {
+        "Incubation": 0,
+        "Attention": 0,
+        "Unattended": 0,
+        "Absent": 0.04
+    },
+    "behavior_timestamps": {
+        "Incubation": [],
+        "Attention": [],
+        "Unattended": [],
+        "Absent": [
+            "0.00-0.00"
+        ]
+    },
+    "consistent_egg_count": 0,
+    "hatchling_max": 0,
+    "total_duration": 0.04,
+    "percentages": {
+        "Incubation": 0.0,
+        "Attention": 0.0,
+        "Unattended": 0.0,
+        "Absent": 100.0
+    },
+    "timestamp": "2024-10-29T19:32:21.728417"
+}

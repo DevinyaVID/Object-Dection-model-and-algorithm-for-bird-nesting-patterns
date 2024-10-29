@@ -1,0 +1,45 @@
+# Byte-compiled files
+__pycache__/
+*.py[cod]
+
+# Virtual environment
+venv/
+env/
+ENV/
+.venv/
+*.egg-info/
+
+# Flask instance folder
+instance/
+
+# Configuration files
+*.env
+*.flaskenv
+
+# Test coverage
+.coverage
+.coverage.*
+*.egg
+
+# Pytest
+.cache/
+pytest_cache/
+
+# IDE specific files
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Log files
+*.log
+
+# Backup files
+*.bak
+*.swp
+*.jpg
+*.txt
