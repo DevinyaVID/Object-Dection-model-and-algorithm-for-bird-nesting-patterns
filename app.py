@@ -278,7 +278,14 @@ def process_video():
     video = request.files['video']
     video_path = os.path.join(UPLOAD_FOLDER, video.filename)
     video.save(video_path)
- 
+    
+    # Clear LABELS_FOLDER and FRAMES_FOLDER
+    for folder in [LABELS_FOLDER, FRAMES_FOLDER]:
+        for file_name in os.listdir(folder):
+            file_path = os.path.join(folder, file_name)
+            if os.path.isfile(file_path):
+                os.remove(file_path)
+
     # Run YOLO prediction and save outputs directly with normalized coordinates
     results = model.predict(source=video_path, save_txt=True, save_conf=True)
 
